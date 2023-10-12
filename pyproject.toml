@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "bin-day-scraper"
+version = "0.1.0"
+description = ""
+authors = ["Jonathan Howarth <jonathan.michael.howarth@gmail.com>"]
+readme = "README.md"
+packages = [{include = "bin_day_scraper"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.14.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+black = "^23.9.1"
+pylint = "^3.0.1"
+pre-commit = "^3.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
